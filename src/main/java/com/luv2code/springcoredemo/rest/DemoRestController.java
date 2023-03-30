@@ -12,7 +12,7 @@ public class DemoRestController {
     // define a private field for the dependency
     private Coach myCoach;
 
-    public DemoRestController(@Qualifier("cricketCoach") Coach theCoach) {
+    public DemoRestController(@Qualifier("aquatic") Coach theCoach) {
         System.out.println("In constructor: " + getClass().getSimpleName());
         this.myCoach = theCoach;
     }
